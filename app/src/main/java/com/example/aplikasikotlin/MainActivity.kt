@@ -2,6 +2,8 @@ package com.example.aplikasikotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.EditText
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
@@ -10,9 +12,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun Submit_btn(view: View) {
+    fun submit_btn(view: View) {
         val namaEditText = findViewById<EditText>(R.id.nama_edit_text)
         val nama = namaEditText.text.toString()
+
 
         val toast = Toast.makeText(applicationContext, nama, Toast.LENGTH_SHORT)
         toast.show()

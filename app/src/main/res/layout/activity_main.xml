@@ -9,22 +9,23 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/aku"
-        android:scaleType="centerCrop" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/aku" />
 
     <EditText
+        android:id="@+id/nama_edit_text"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:hint="Masukkan namamu"
-        android:textSize="30sp"
-        android:id="@+id/nama_edit_text" />
+        android:layout_height="wrap_content"
+        android:hint="Ajeng"
+        android:textSize="30sp" />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SUBMIT"
         android:layout_below="@id/nama_edit_text"
-        android:textSize="30sp"
-        android:onClick="submit_btn" />
+        android:onClick="submit_btn"
+        android:text="SUBMIT"
+        android:textSize="35sp" />
 
 </RelativeLayout>
